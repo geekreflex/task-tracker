@@ -46,6 +46,7 @@ html {
   font-size: 18px;
   color: #333;
   font-weight: 600;
+  background: transparent;
 }
 
 #task-list {
@@ -81,4 +82,10 @@ html {
 
 .add-new-wrap {
   margin: 100px 0;
+}
+
+#empty-msg {
+  display: flex;
+  justify-content: center;
+  color: #333;
 }
