@@ -9,11 +9,11 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "./src/preload.js"),
     },
   });
 
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile(path.join(__dirname, "./src/index.html"));
 
   mainWindow.once("ready-to-show", () => {
     mainWindow.webContents.send("tasks", tasksData.tasks);
