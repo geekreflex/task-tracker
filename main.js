@@ -47,7 +47,8 @@ function createWindow() {
     mainWindow.webContents.send("tasks", updatedTasks);
   });
 
-  ipcMain.on("delete-task", (event, task) => {
+  ipcMain.handle("delete-task", (event, task) => {
+    console.log(task);
     const updatedTasks = tasksData.deleteTask(task).tasks;
 
     mainWindow.webContents.send("tasks", updatedTasks);

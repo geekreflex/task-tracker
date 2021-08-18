@@ -6,7 +6,7 @@ addBtn.addEventListener("click", async () => {
 });
 
 const deleteTask = (e) => {
-  window.addTask.delete(e.target.textConent);
+  window.addTask.delete(e.target.textContent);
 };
 
 window.addTask.receive("tasks", (data) => {

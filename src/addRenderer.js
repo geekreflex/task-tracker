@@ -3,6 +3,5 @@ const saveBtn = document.querySelector("#save-task");
 
 saveBtn.addEventListener("click", async () => {
   await window.addTask.send("task", task.value);
+  task.value = "";
 });
-
-task.value = "";
