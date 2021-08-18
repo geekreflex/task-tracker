@@ -9,11 +9,11 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "./src/preload.js"),
+      preload: path.join(__dirname, "preload.js"),
     },
   });
 
-  mainWindow.loadFile(path.join(__dirname, "./src/index.html"));
+  mainWindow.loadFile(path.join(__dirname, "index.html"));
 
   mainWindow.once("ready-to-show", () => {
     mainWindow.webContents.send("tasks", tasksData.tasks);
@@ -27,8 +27,8 @@ function createWindow() {
         width: 400,
         height: 400,
         parent: mainWindow,
-        autoHideMenuBar: true,
-        webPreference: {
+        // autoHideMenuBar: true,
+        webPreferences: {
           preload: path.join(__dirname, "./src/addPreload.js"),
         },
       });
