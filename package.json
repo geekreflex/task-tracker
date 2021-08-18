@@ -1,0 +1,25 @@
+{
+  "name": "task-tracker",
+  "version": "1.0.0",
+  "description": "Task Tracker",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekreflex/task-tracker.git"
+  },
+  "author": "Jerry Nwosu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geekreflex/task-tracker/issues"
+  },
+  "homepage": "https://github.com/geekreflex/task-tracker#readme",
+  "devDependencies": {
+    "electron": "^13.2.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.0.0"
+  }
+}
